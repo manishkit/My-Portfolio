@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    width: fit-content;
+}
+body hr{
+    width: 100%;
+    color: #66fcf1;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background-color: black;
+    color: #66fcf1;
+    padding: 1rem 0;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #66fcf1;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #124e66;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.home {
+    background-color: #124e66;
+    color: #66fcf1;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section {
+    background-color: #1f2833;
+    color: aqua;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: aqua;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #124e66;
+}
+
+footer {
+    background-color:black;
+    color: aqua;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #66fcf1;
+    }
+
+    .show-menu {
+        display: flex !important;
+    }
+
+    table {
+    box-shadow: 10px 7px 28px aqua;
+    border-radius: 8px;
+}
+
+    .home h1 {
+        font-size: 2rem;
+    }
+}
